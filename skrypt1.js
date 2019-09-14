@@ -10,7 +10,7 @@ db.Product_categories.insertMany([
 	{_id: 8, name: "IP cameras", number: 1},
 	{_id: 9, name: "Scams IP cameras", number: 2},
 	{_id: 10, name: "USB Flash", number: 2}])
-db.createCollection("Product_list")
+db.createCollection("Product_list")/*insertMany - srabatyvaet*/
 db.Product_list.insert({_id: 12220, full_name: "Car DVD-E-ACE Mirror, 4.3 inch display, Full HD, MicroSD (up to 32GB), Motion Detector, IR backlight", price_grn: 750.00, wholesale_price_grn: 601.00, "prod_cat": {"$ref": "Product_categories", "$id": "1"}})
 db.Product_list.insert({_id: 11995, full_name: "TV Console R69 Allwinner 4 cores / 1GB DDR3 RAM / 8GB / Wi-Fi / HDMI 1.4 / LAN 100Mbit Smart TV Box Android 7.1", price_grn: 699.00, wholesale_price_grn: 726.00, "prod_cat": {"$ref": "Product_categories", "$id": "2"}})
 db.Product_list.insert({_id: 12119, full_name: "TV Console R69 Allwinner 4 cores / 2GB DDR3 RAM / 16GB / Wi-Fi / HDMI 1.4 / LAN 100Mbit Smart TV Box Android 7.1", price_grn: 899.00, wholesale_price_grn: 929.00, "prod_cat": {"$ref": "Product_categories", "$id": "2"}})
